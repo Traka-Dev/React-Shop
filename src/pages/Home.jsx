@@ -1,3 +1,8 @@
 import React from "react"
+import { Header } from "../components/Header"
 
-export const Home = () => <h1>Home</h1>
+export const Home = () => {
+    return (
+        <Header />
+    )
+}
