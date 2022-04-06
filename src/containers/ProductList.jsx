@@ -1,15 +1,15 @@
-import React from 'react'
-import '../styles/ProductList.scss'
-import { ProductCard } from './ProductCard'
+import React from 'react';
+import ProductItem from '../components/ProductItem';
+import '../styles/ProductList.scss';
 
-export const ProductList = () => {
-
-    return (
-        <section class="main-container">
-            <div class="cards-container">
-                { /* Loop */}
-                <ProductCard />
-            </div>
-        </section>
-    )
+const ProductList = () => {
+	return (
+		<section className="main-container">
+			<div className="ProductList">
+				<ProductItem />
+			</div>
+		</section>
+	);
 }
+
+export default ProductList;

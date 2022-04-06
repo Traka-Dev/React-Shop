@@ -1,22 +1,28 @@
-import React from 'react'
-import '../styles/MyOrder.jsx'
+import React from 'react';
+import OrderItem from '../components/OrderItem';
+import '../styles/MyOrder.scss';
 
-export const MyOrder = () => {
-
-    return (
-        <div class="my-order">
-            <div class="my-order-container">
-                <h1 class="title">My order</h1>
-                <div class="my-order-content">
-                    <div class="order">
-                        <p>
-                            <span>03.25.21</span>
-                            <span>6 articles</span>
-                        </p>
-                        <p>$560.00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+const MyOrder = () => {
+	return (
+		<aside className="MyOrder">
+			<div className="title-container">
+				<img src="./icons/flechita.svg" alt="arrow" />
+				<p className="title">My order</p>
+			</div>
+			<div className="my-order-content">
+				<OrderItem />
+				<div className="order">
+					<p>
+						<span>Total</span>
+					</p>
+					<p>$560.00</p>
+				</div>
+				<button className="primary-button">
+					Checkout
+				</button>
+			</div>
+		</aside>
+	);
 }
+
+export default MyOrder;
